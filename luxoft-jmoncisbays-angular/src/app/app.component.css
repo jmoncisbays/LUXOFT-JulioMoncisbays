@@ -1,0 +1,16 @@
+div.search-container {
+  background-color: #f6f6f6;
+}
+
+a.nav-link.active {
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+input.search {
+  border-color: lightskyblue;
+}
+
+.input-group-append > button {
+  width: 40px;
+}

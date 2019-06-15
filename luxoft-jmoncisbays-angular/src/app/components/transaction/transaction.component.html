@@ -1,0 +1,18 @@
+<div class="transaction-container mb-3 p-2 pl-4">
+  <div class="row">
+    <div class="col-7">
+      <span class="company">{{ transaction.company.name }}</span>
+    </div>
+    <div class="col">
+      <span>({{ transaction.identifier }})</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <span>{{ transaction.transactionDate | date:'MM/dd/yyyy' }}</span>
+    </div>
+    <div class="col">
+      <span>{{ transaction.headline | headlinePreview:(transaction.headline) }}</span>
+    </div>
+  </div>
+</div>

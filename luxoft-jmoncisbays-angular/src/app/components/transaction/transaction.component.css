@@ -1,0 +1,8 @@
+div.transaction-container {
+  background-color: #efefef;
+}
+
+span.company {
+  color: dodgerblue;
+  font-size: 1.5rem;
+}

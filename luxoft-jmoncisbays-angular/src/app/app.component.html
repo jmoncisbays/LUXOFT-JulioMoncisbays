@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="search-container mb-2 p-2">
+    <div class="input-group mb-3">
+      <input class="form-control search" placeholder="Search by identifier OR Company Name OR Keywords..."
+        #search="ngModel" [(ngModel)]="filter" (keyup.enter)="loadTransactions(1)">
+      <div class="input-group-append">
+        <button class="btn btn-sm btn-success" type="button" (click)="loadTransactions(1)" [disabled]="search.value == ''">
+          <i class="fas fa-search"></i>
+        </button>
+        <button class="btn btn-sm btn-danger" type="button" (click)="clearSearch()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
+  </ul>
+  <mat-paginator #paginator [length]="rowCount" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions" (page)="pageChanged($event)">
+  </mat-paginator>
+  <app-transaction *ngFor="let transaction of transactions" [transaction]="transaction"></app-transaction>
+</div>
