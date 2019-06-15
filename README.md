@@ -6,7 +6,7 @@ This repository contains:
 
 Following are the instructions to set up the SQL Server DB, back-end and front-end projects:
 
-##DB-Scripts
+## DB-Scripts
 1. Run the script file **1 - CREATE DB.sql**. It will create a DB named Luxoft_JMoncisbays containing two tables: Companies, and Transactions.
 2. Run the script file **2 - INSERT Companies.sql**. It will populate the Companies data table.
 3. Run the script file **3 - INSERT Transactions.sql**. It will populate the Transactions data table.
